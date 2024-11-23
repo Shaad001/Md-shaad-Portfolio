@@ -67,12 +67,10 @@ h2 {
 .header-light .menu-light a {
     color: var(--Star-Dust-900, #4C4E4F) !important;
 }
-
-.header-light .menu-light a span {
+.header-light .menu-light a span{
     color: var(--Star-Dust-900, #4C4E4F) !important;
 }
-
-.header-light .menu-light a span:hover {
+.header-light .menu-light a span:hover{
     color: var(--Star-Dust-900, #0080FF) !important;
 }
 
@@ -188,6 +186,16 @@ h2 {
     animation: continuous-rotate 5s infinite linear;
 } */
 
+
+.l-i-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 100%;
+}
 @keyframes continuous-rotate {
     from {
         transform: rotate(0deg);
@@ -198,6 +206,10 @@ h2 {
     }
 }
 
+.location video{
+    transition: transform 0.3s ease-in-out;
+    animation: continuous-rotate 9s infinite linear backwards;
+}
 .location {
     background: var(--Star-Dust-950, #2A2C2D);
     display: flex;
@@ -206,7 +218,6 @@ h2 {
     align-items: center;
     gap: 12px;
     border-radius: 48px 0px 0px 48px;
-
 }
 
 .location i {
