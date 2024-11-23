@@ -1,0 +1,60 @@
+let finsd = () => {
+    const currentPageName = window.location.pathname.split("/").pop();
+    console.log(currentPageName);
+
+
+    return currentPageName
+}
+let classheader = finsd();
+window.addEventListener("load", () => {
+    if ("indexhtml") {
+        classheader.style.backgroundColor = "#fff"
+        classheader.style.color = "#4C4E4F"
+    }
+    document.getElementById("Header").innerHTML = `  <div id="Logo logo" data-aos="fade-up" data-aos-duration="500">
+            <a href="">
+                <svg width="60" height="70" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.3463 52.3254C14.7728 53.431 17.3735 54 20 54V53.9971L20.004 54L43.4489 14.8138C45.4358 15.2963 47.3399 16.1957 49.0505 17.4864C52.5498 20.1268 54.9523 24.1881 55.7294 28.777C56.5065 33.3658 55.5945 38.1063 53.1942 41.9555C50.7938 45.8048 47.1017 48.4475 42.93 49.3023L43.4219 53.5961C48.6365 52.5276 53.4923 49.256 56.4927 44.4444C59.4932 39.6329 60.6331 33.7073 59.6617 27.9712C58.6903 22.2351 55.6873 17.1585 51.3131 13.858C46.9389 10.5575 41.552 9.30363 36.3374 10.3721L36.3421 10.3999L36.326 10.3952L13.747 48.2003C11.857 47.3176 10.1388 46.0428 8.68628 44.4451C7.20055 42.8108 6.022 40.8706 5.21792 38.7353C4.41385 36.6 4 34.3113 4 32.0001C4 29.6888 4.41385 27.4002 5.21792 25.2649C6.022 23.1295 7.20055 21.1893 8.68628 19.555C10.172 17.9207 11.9358 16.6243 13.8771 15.7399C15.8183 14.8554 17.8988 14.4001 20 14.4001L20 10.0002C17.3735 10.0002 14.7728 10.5692 12.3463 11.6748C9.91981 12.7804 7.71503 14.4009 5.85786 16.4438C4.00069 18.4867 2.5275 20.9119 1.52241 23.5811C0.517315 26.2502 1.14806e-07 29.111 0 32.0001C-1.14805e-07 34.8891 0.517314 37.7499 1.52241 40.4191C2.5275 43.0882 4.00069 45.5135 5.85786 47.5564C7.71503 49.5993 9.91981 51.2198 12.3463 52.3254ZM16.2949 49.1216C17.1886 49.3556 18.0999 49.5048 19.0188 49.5669L40.214 14.4016C39.275 14.3877 38.3308 14.4648 37.3924 14.6354L16.2949 49.1216Z"
+                        fill="#2C333A" />
+                </svg>
+            </a>
+        </div>
+        <div class="left-side-nav" data-aos="fade-up" data-aos-duration="1000">
+            <div class="navigation-bar">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html" onclick="">Home</a>
+                    </li>
+                    <li>
+                        <a href="information.html">Information</a>
+                    </li>
+                    <li>
+                        <a href="experiments.html">Experiments</a>
+                    </li>
+                    <li class="contact-btn">
+                        <a href="mailto:shaadwork637@gmail.com"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <button class="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <g clip-path="url(#clip0_1000_365)">
+                        <path d="M7 6H17" stroke="#070707" stroke-width="2" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        <path d="M4 12H20" stroke="#070707" stroke-width="2" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        <path d="M7 12H20" stroke="#070707" stroke-width="2" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                        <path d="M7 18H17" stroke="#070707" stroke-width="2" stroke-linecap="square"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1000_365">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg></button> -->
+        </div>`
+
+})

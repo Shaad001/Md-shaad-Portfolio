@@ -55,6 +55,27 @@ h2 {
     line-height: 120%;
 }
 
+.header-light {
+    background-color: transparent !important;
+}
+
+.header-light .menu a:hover {
+    color: var(--Gray-scale-950, #0080FF) !important;
+    animation-timing-function: ease-out;
+}
+
+.header-light .menu-light a {
+    color: var(--Star-Dust-900, #4C4E4F) !important;
+}
+
+.header-light .menu-light a span {
+    color: var(--Star-Dust-900, #4C4E4F) !important;
+}
+
+.header-light .menu-light a span:hover {
+    color: var(--Star-Dust-900, #0080FF) !important;
+}
+
 .header {
     background-color: var(--Star-Dust-500, #999D9E);
     padding: 12px 120px;
@@ -157,6 +178,26 @@ h2 {
     gap: 24px
 }
 
+
+/* .scroll-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    animation: continuous-rotate 5s infinite linear;
+} */
+
+@keyframes continuous-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .location {
     background: var(--Star-Dust-950, #2A2C2D);
     display: flex;
@@ -165,6 +206,7 @@ h2 {
     align-items: center;
     gap: 12px;
     border-radius: 48px 0px 0px 48px;
+
 }
 
 .location i {
@@ -175,14 +217,23 @@ h2 {
     justify-content: center;
     align-items: center;
     border-radius: 48px;
-    transform: rotate("15deg");
+
+}
+
+.location video {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 40px;
 }
 
 .location i svg {
-    width: 48px;
-    height: 48px;
+    /* width: 48px;
+    height: 48px; */
     border: 1px;
     color: var(--Star-Dust-950, #fff);
+    transition: transform 0.3s ease-in-out;
+    animation: continuous-rotate 5s infinite linear;
 }
 
 .location p {
@@ -832,25 +883,24 @@ h2 {
 
 /* LOADING ANIMATION START */
 
-.loadingAnimation {
-    width: 100%;
-    height: 100vh;
-    background-color: #4c4e4f;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-}
-
-.loadingAnimation h3 {
+/* .loading-container {
+    text-align: center;
     width: 100%;
     height: 100%;
-    color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
+.loading-text {
+    font-size: 20px;
+    color: #0080FF;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+} */
 
 /* LOADING ANIMATION END */
 
@@ -1362,10 +1412,13 @@ h2 {
 .d-p-content {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     width: 100%;
 }
 
+.ar-left {
+    padding-top: 80px;
+}
 
 .d-p-content i {
     width: 168px;
