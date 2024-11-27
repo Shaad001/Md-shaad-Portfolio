@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
             <div class="navigation-bar">
                 <ul class="menu menu-light">
                     <li>
-                        <a href="index.html" onclick="">Home</a>
+                        <a href="" onclick="">Home</a>
                     </li>
                     <li>
                         <a href="information.html">Information</a>

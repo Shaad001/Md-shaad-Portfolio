@@ -67,10 +67,12 @@ h2 {
 .header-light .menu-light a {
     color: var(--Star-Dust-900, #4C4E4F) !important;
 }
-.header-light .menu-light a span{
+
+.header-light .menu-light a span {
     color: var(--Star-Dust-900, #4C4E4F) !important;
 }
-.header-light .menu-light a span:hover{
+
+.header-light .menu-light a span:hover {
     color: var(--Star-Dust-900, #0080FF) !important;
 }
 
@@ -187,7 +189,7 @@ h2 {
 } */
 
 
-.l-i-video{
+.l-i-video {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,6 +198,7 @@ h2 {
     background-color: #fff;
     border-radius: 100%;
 }
+
 @keyframes continuous-rotate {
     from {
         transform: rotate(0deg);
@@ -206,10 +209,11 @@ h2 {
     }
 }
 
-.location video{
+.location video {
     transition: transform 0.3s ease-in-out;
     animation: continuous-rotate 9s infinite linear backwards;
 }
+
 .location {
     background: var(--Star-Dust-950, #2A2C2D);
     display: flex;
@@ -981,6 +985,10 @@ h2 {
     align-self: stretch;
 }
 
+.Swiftex {
+    background: linear-gradient(90deg, rgba(249, 220, 92, 0.30) 28%, rgba(0, 128, 255, 0.30) 100%)  !important;
+}
+
 .case-study-img .images {
     width: 100%;
     display: flex;
@@ -1053,7 +1061,7 @@ h2 {
 
 .f-content .heading h5 {
     color: var(--Gray-scale-900, #4C5863);
-    /* width: 70%; */
+    width: 80%;
 }
 
 .f-content video {
@@ -1169,6 +1177,11 @@ h2 {
 
 
 /* CASE STUDY MOCKUP CSS START */
+.w-100{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 .casestudyMockup {
     padding: 64px 120px;
